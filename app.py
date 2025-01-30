@@ -40,7 +40,7 @@ download_nltk_data()
 
 
 # Load API key from config.toml
-config = toml.load('.streamlit/config.toml')
+config = toml.load('.streamlit/secrets.toml')
 api_key = config['general']['api_key']
 
 # Linking to Google Books API
