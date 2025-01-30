@@ -8,7 +8,6 @@ from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.sentiment import SentimentIntensityAnalyzer
 import string
-import toml
 import os
 
 # NLTK data path configuration
@@ -38,10 +37,8 @@ def download_nltk_data():
 # Call the download function
 download_nltk_data()
 
-
-# Load API key from config.toml
-config = toml.load('.streamlit/secrets.toml')
-api_key = config['general']['api_key']
+# Load API key from secrets.toml
+api_key = st.secrets["general"]["api_key"]
 
 # Linking to Google Books API
 def search_books(passage):
