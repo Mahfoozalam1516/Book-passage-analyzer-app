@@ -1,0 +1,5 @@
+streamlit
+sumy
+requests
+nltk
+toml
