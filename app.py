@@ -9,6 +9,7 @@ from nltk.corpus import stopwords
 from nltk.sentiment import SentimentIntensityAnalyzer
 import string
 import toml
+import os
 
 # NLTK data path configuration
 NLTK_DATA_PATH = os.path.join(os.path.dirname(__file__), 'nltk_data')
